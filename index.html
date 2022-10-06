@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .alto-100 {
+        height: 100vh;
+      }
+      .container {
+        color: hsla(0, 0%, 100%, 0.75);
+        margin: auto;
+      }
+      .row {
+        width: 70%;
+        height: 60%;
+        margin: auto;
+      }
+      .col1 {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 49px;
+      }
+      .col2 {
+        background-color: hsl(184, 100%, 22%);
+        padding: 48px;
+      }
+      .col3 {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 48px;
+      }
+      .title {
+        margin-top: 20px;
+        color: hsla(0, 0%, 95%);
+        font-family: "Big Shoulders Display";
+        font-size: 30px;
+      }
+      .descripcion {
+        font-size: 13px;
+        font-family: "Outfit";
+      }
+      button {
+        margin-top: 50px;
+        border-color: transparent;
+        border-radius: 25px;
+        font-size: 12px;
+        padding: 7px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      .col1 button {
+        color: hsl(31, 77%, 52%);
+      }
+      .col1 button:hover,
+      .col2 button:hover,
+      .col3 button:hover {
+        border-top-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        color: hsl(0, 0%, 95%);
+        background-color: transparent;
+        border-color: hsla(0, 0%, 100%, 0.75);
+      }
+      .col1 button {
+        color: hsl(31, 77%, 52%);
+      }
+      .col2 button {
+        color: hsl(184, 100%, 22%);
+      }
+      .col3 button {
+        color: hsl(179, 100%, 13%);
+      }
+      @media screen and (max-width: 767px) {
+        .container {
+          height: 100%;
+          width: 100%;
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .row {
+          width: 95%;
+          height: 70%;
+        }
+        .col1 {
+          border-top-right-radius: 5px;
+          border-bottom-left-radius: 0;
+        }
+        .col3 {
+          border-bottom-left-radius: 5px;
+          border-top-right-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container d-flex align-items-center justify-content-center alto-100"
+    >
+      <div class="row">
+        <div class="col1 col-12 col-md-4">
+          <img src="images/icon-sedans.svg" alt="" />
+          <p class="title">SEDANS</p>
+          <p class="descripcion">
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="col2 col-12 col-md-4">
+          <img src="images/icon-suvs.svg" alt="" />
+          <p class="title">SUVS</p>
+          <p class="descripcion">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="col3 col-12 col-md-4">
+          <img src="images/icon-luxury.svg" alt="" />
+          <p class="title">LUXURY</p>
+          <p class="descripcion">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
